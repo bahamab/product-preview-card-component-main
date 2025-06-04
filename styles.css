@@ -28,7 +28,7 @@ body {
   display: grid;
   grid-template-columns: 22rem 22rem;
   margin: auto;
-  margin-top: 14rem;
+  margin-top: 6rem;
   border-radius: 15px;
 }
 
@@ -52,10 +52,10 @@ body {
   color: hsl(228, 12%, 48%);
   letter-spacing: 4px;
   text-transform: uppercase;
-
   font-weight: 500;
   align-self: center;
   padding-top: 0.75rem;
+  width: 15rem;
 }
 
 .span-2 {
@@ -75,6 +75,7 @@ body {
   font-family: "Fraunces", serif;
   color: hsl(158, 36%, 37%);
   font-size: 2rem;
+  width: 15rem;
 }
 
 .span-5 {
@@ -111,15 +112,28 @@ body {
   right: 0.5rem;
 }
 
+.attribution {
+  position: relative;
+  margin: auto;
+  margin-top: 5rem;
+  width: 20rem;
+}
+
 @media all and (max-width: 700px) {
   .product-image-desktop {
     display: none;
+  }
+
+  body {
+    width: 28rem;
+    margin: 0;
+    padding: 1rem 1rem 1rem 1rem;
   }
   .main-container {
     display: grid;
     width: 25rem;
     height: 48.5rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
     grid-template-columns: 25rem;
     grid-template-rows: 18rem 30.5rem;
@@ -143,6 +157,7 @@ body {
   }
   .span-2 {
     width: 25rem;
+    width: 23rem;
   }
 
   .span-3 {
@@ -152,22 +167,24 @@ body {
 
   .span-4 {
     margin-top: -4rem;
+    position: relative;
   }
 
   .span-6 {
     margin-top: -4.5rem;
-    margin-left: 0.75rem;
+    margin-left: 2.5rem;
     scale: 1.05;
     height: 3rem;
     padding-top: 0.6rem;
   }
-}
-
-.attribution {
-  position: absolute;
-  margin-top: 10rem;
-  width: 20rem;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  .attribution {
+    position: relative;
+    margin: auto;
+    width: 20rem;
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+  }
+  html {
+    font-size: 14px;
+  }
 }
