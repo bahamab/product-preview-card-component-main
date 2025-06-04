@@ -116,17 +116,21 @@ body {
   position: relative;
   margin: auto;
   margin-top: 5rem;
-  width: 20rem;
+  width: 10rem;
 }
 
 @media all and (max-width: 700px) {
+  html {
+    font-size: 10px;
+  }
+
   .product-image-desktop {
     display: none;
   }
 
   body {
     width: 28rem;
-    margin: 0;
+    margin: auto;
     padding: 1rem 1rem 1rem 1rem;
   }
   .main-container {
@@ -183,8 +187,5 @@ body {
     width: 20rem;
     margin-top: -2rem;
     padding-bottom: 2rem;
-  }
-  html {
-    font-size: 14px;
   }
 }
